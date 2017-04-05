@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="container">
+            <!-- Portfolio and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#" data-toggle="modal" data-target="#myModal_2">Appify</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal_3">Sunflower</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal_4">Doleh</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- content -->
+    <div class="container">
+        <header class="row">
+            <div class="col-md-6">
+                <img class="title-logo" src="https://cdn.worldvectorlogo.com/logos/udacity.svg" alt="udactiy logo">
+            </div>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="title-super text-thin">Justin Pingatore</h1>
+                <h4>Front-End Ninja</h4>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <img class="img-responsive" src="https://source.unsplash.com/4uojMEdcwI8" data-toggle="modal" alt="Image of a man standing on the mountain gazing the horizon" data-target="#myModal_1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-muted">Featured Work</h2>
+            </div>
+        </div>
+        <projects class="row text-center">
+            <appify class="col-md-4">
+                <img class="img-responsive" src="https://source.unsplash.com/ilkTnuMunP8" alt="Appify image" data-toggle="modal" data-target="#myModal_2">
+                <h3 class="text-uppercase">Appify</h3>
+                <p><a href="#">Source</a></p>
+            </appify>
+            <sunflower class="col-md-4">
+                <img class="img-responsive" src="https://source.unsplash.com/RTKaEcGKarQ" alt="Sunflower image" data-toggle="modal" data-target="#myModal_3">
+                <h3 class="text-uppercase">Sunflower</h3>
+                <p><a href="#">Source</a></p>
+            </sunflower>
+            <doleh class="col-md-4">
+                <img class="img-responsive pop" src="https://source.unsplash.com/f5sdemaT7XE" alt="Doleh image" data-toggle="modal" data-target="#myModal_4">
+                <h3 class="text-uppercase">Doleh</h3>
+                <p><a href="#">Source</a></p>
+            </doleh>
+        </projects>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Portfolio</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="https://source.unsplash.com/4uojMEdcwI8" alt="Image of a man standing on top of a mountain wathing the horizon">
+            <p>Welcome to my portfolio page! Take a peak at some of my best campground photos below.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Portfolio</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="https://source.unsplash.com/ilkTnuMunP8" alt="rocky mountain national forest">
+            <p>Deep in the woods of Rocky Mountain National Forest.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Portfolio</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="https://source.unsplash.com/RTKaEcGKarQ" alt="zion at night">
+            <p>Living beneath the milky way at Mt. Zion National Park.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="myModal_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Portfolio</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="https://source.unsplash.com/f5sdemaT7XE" alt="glacier national park">
+            <p>Snow camping at Glacier National Park.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!-- change active class in navbar -->
+<script>
+    $(".nav li").on("click", function() {
+      $(".nav li").removeClass("active");
+      $(this).addClass("active");
+    });
+
+</script>
+
+</body>
+</html>
